@@ -20,4 +20,20 @@ def reverse_number(n):
 
     print(reverse)
 
-reverse_number(1009)
+# check palindrome
+
+def check_palindrome(n):
+    reverse, copy = 0, n
+
+    while(copy>0):
+        last_digit = copy%10
+        reverse = reverse*10 + last_digit
+        copy=copy//10
+
+    if reverse==n:
+        print("palindrome")
+    else:
+        print("not palindrome")
+
+check_palindrome(10321)
+
