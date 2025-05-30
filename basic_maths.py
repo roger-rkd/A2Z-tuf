@@ -88,7 +88,22 @@ def print_divisors(n):
 
     print(divisors)
 
-print_divisors(36)
+def check_prime(n):
+    
+    sq_root = int(math.sqrt(n))
+    c = 0
+    for i in range(1, sq_root+1):
+        if n%i == 0:
+            c = c+1
+            if n // i != i: # checking if the second number is same as the first one, if not adding a counter to it as well
+                c = c+1
+    
+    if c>2:
+        print("Not Prime")
+    else:
+        print("Prime")
+
+check_prime(12345)
 
 
     
