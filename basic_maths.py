@@ -35,6 +35,7 @@ def check_palindrome(n):
     else:
         print("not palindrome")
 
+# finding gdc/hcf
 
 def hcf(a, b):
 
@@ -44,7 +45,31 @@ def hcf(a, b):
         
     print(gcd)
 
-hcf(9,12)
+# find armstrong
+
+def armstrong(n):
+    copy = n
+    copy2 = n
+    c = 0
+    # counting digits in number
+    while copy:
+        copy = copy // 10
+        c = c+1
+
+    # calculating armstrong
+    res = 0
+    while copy2:
+        digit = copy2 % 10
+        res = res + digit ** c
+        copy2 = copy2 // 10
+        
+    if res == n:
+        print("Armstrong")
+
+    else:
+        print("not armstrong")
+
+armstrong(154)
 
 
     
