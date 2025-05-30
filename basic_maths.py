@@ -35,5 +35,16 @@ def check_palindrome(n):
     else:
         print("not palindrome")
 
-check_palindrome(10321)
 
+def hcf(a, b):
+
+    for i in range(1, min(a,b)+1):
+        if a%i == 0 and b%i == 0:
+            gcd = i
+        
+    print(gcd)
+
+hcf(9,12)
+
+
+    
