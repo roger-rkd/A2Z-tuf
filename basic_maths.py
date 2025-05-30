@@ -1,3 +1,4 @@
+import math
 # count digits
 
 def count_digits(n):
@@ -69,7 +70,25 @@ def armstrong(n):
     else:
         print("not armstrong")
 
-armstrong(154)
+# print all divisors
+
+def print_divisors(n):
+
+    divisors = [] # creating a list that everything fits in well
+
+    sq_root = int(math.sqrt(n))
+
+    for i in range(1,sq_root+1):
+
+
+        if n%i==0:
+            divisors.append(i)
+            if n // i != i: # if the second multiple is different from the first one, then appending it as well
+                divisors.append(n//i)
+
+    print(divisors)
+
+print_divisors(36)
 
 
     
