@@ -1,3 +1,5 @@
+# count digits
+
 def count_digits(n):
     c=0
     while(n>0):
@@ -6,6 +8,16 @@ def count_digits(n):
 
     print(c)
 
-a = int(input("Enter the number to be counted: "))
-count_digits(a)
 
+# reverse number
+
+def reverse_number(n):
+    reverse = 0
+    while(n>0):
+        last_digit = n%10
+        reverse = reverse*10 + last_digit
+        n=n//10
+
+    print(reverse)
+
+reverse_number(1009)
