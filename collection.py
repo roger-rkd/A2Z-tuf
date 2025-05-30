@@ -6,4 +6,6 @@ words = str.split()
 
 word_count = Counter(words)
 
-print(word_count['is'])
+print(word_count['is']) 
+
+
