@@ -19,4 +19,11 @@ def print_1_to_n(i,n):
         print(i)
         print_1_to_n(i+1,n)
         
-print_1_to_n(1,5)
+# print_1_to_n(1,5)
+
+def print_n_to_1(n,i):
+    if i<=n:
+        print(n)
+        print_n_to_1(n-1,i)
+
+print_n_to_1(5,1)
