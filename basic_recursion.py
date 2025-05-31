@@ -26,4 +26,13 @@ def print_n_to_1(n,i):
         print(n)
         print_n_to_1(n-1,i)
 
-print_n_to_1(5,1)
+# print_n_to_1(5,1)
+
+def sum_of_first_n_numbers(i,n,c):
+    if i<=n:
+        c+=i
+        sum_of_first_n_numbers(i+1,n,c) # handling c in the main function call
+    else:
+        print("Sum :", c)
+
+sum_of_first_n_numbers(1,10,0) # initializing c as 0
