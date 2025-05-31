@@ -35,4 +35,13 @@ def sum_of_first_n_numbers(i,n,c):
     else:
         print("Sum :", c)
 
-sum_of_first_n_numbers(1,10,0) # initializing c as 0
+# sum_of_first_n_numbers(1,10,0) # initializing c as 0
+
+def factorial(n,i,c):
+    if i<=n:
+        c*=i
+        factorial(n,i+1,c)
+    else:
+        print("Factorial :",c)
+
+factorial(5,1,1)
