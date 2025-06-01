@@ -53,4 +53,22 @@ def reverse_array(arr, left_position, right_position): # revise
     else:
         print(arr)
 
-reverse_array([10,20,30,40],0,3)
+# reverse_array([10,20,30,40],0,3)
+
+def check_str_palindrome(str): # revist : slicing, boolean conditions
+    if len(str)<= 1: # checking the complete string
+        return True
+    if str[0] == str[-1]: # cheching first and last characters
+        return check_str_palindrome(str[1:-1]) # slicing the string to check the inner characters after each iterations
+    else:
+        return False
+    
+def main():
+    str = "madame"
+
+    if check_str_palindrome(str):
+        print("palindrome")
+    else:
+        print("not palindrome")
+
+main()
