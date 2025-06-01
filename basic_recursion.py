@@ -63,12 +63,22 @@ def check_str_palindrome(str): # revist : slicing, boolean conditions
     else:
         return False
     
-def main():
-    str = "madame"
+# def main():
+#     str = "madame"
 
-    if check_str_palindrome(str):
-        print("palindrome")
-    else:
-        print("not palindrome")
+#     if check_str_palindrome(str):
+#         print("palindrome")
+#     else:
+#         print("not palindrome")
 
-main()
+# main()
+
+
+def fibonacci(n):
+    if n<=1:
+        return n
+    last = fibonacci(n-1)
+    second_last = fibonacci(n-2)
+    return last+second_last
+
+print(fibonacci(4))
