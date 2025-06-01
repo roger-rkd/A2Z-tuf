@@ -44,4 +44,13 @@ def factorial(n,i,c):
     else:
         print("Factorial :",c)
 
-factorial(5,1,1)
+# factorial(5,1,1)
+
+def reverse_array(arr, left_position, right_position): # revise
+    if right_position>=left_position: # base condition to check when the right postion <= left position
+        arr[left_position],arr[right_position]=arr[right_position],arr[left_position] # swapping the values of both left and right postions
+        reverse_array(arr,left_position+1,right_position-1) # updating the positions
+    else:
+        print(arr)
+
+reverse_array([10,20,30,40],0,3)
