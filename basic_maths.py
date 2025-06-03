@@ -105,5 +105,4 @@ def check_prime(n):
 
 check_prime(12345)
 
-
-    
+# up next : hashing 
